@@ -2,7 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 #####################################################################################################################################################################################
-dict = {'strike' : 100, 'price' : 100, 'time steps' : 100, 'years': 1, 'risk-free rate': 0.02, 'dividend': 0.04, 
+dict = {'strike' : 100, 'price' : 80, 'time steps' : 100, 'years': 1, 'risk-free rate': 0.02, 'dividend': 0.04, 
         'callput': -1, 'AmerEu': 1}
 # call = 1, put = -1; in callput
 # American = 1, European = -1; in AmerEu
@@ -11,7 +11,7 @@ vol_list = []
 price_list = []
 for number in range(0,100):
     rng = np.random.default_rng()
-    dict['sigma'] = rng.uniform(low=0, high=4)
+    dict['sigma'] = rng.uniform(low=0, high=10)
     vol_list.append(dict['sigma'])
 
     u = math.exp(dict['sigma']*math.sqrt(dict['years']/dict['time steps']))
@@ -66,8 +66,7 @@ for number in range(0,100):
 
         return discounting1[0]
     price_list.append(binomial())
-
-plt.plot(vol_list, price_list)
+plt.scatter(vol_list, price_list)
 plt.xlabel('Underlying Volatility')
 plt.ylabel('Option Price ($)')
 plt.show()
