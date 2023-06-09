@@ -7,6 +7,7 @@ dict = {'price': 100, 'sigma': 0.3, 'return': 0.15, 'time': 0.001, 'time_total':
 
 option = {'strike' : 100, 'time steps' : 50, 'years': 2, 'risk-free rate': 0.03, 'dividend': 0.0, 
         'callput': 1, 'AmerEu': 1}
+option['strike'] = dict['price']
 option['sigma'] = dict['sigma']
 option_list = []
 
