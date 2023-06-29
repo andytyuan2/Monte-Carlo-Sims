@@ -17,6 +17,12 @@ Any kind of practice with Monte Carlo simulations using Numpy.
 ### Example of Geometric Brownian Motion
 ![image](https://github.com/andytyuan2/Monte-Carlo-Sims/assets/125106540/e4c49880-73b1-4dd3-915f-2d94a28bafb7)
 
+### Example of market data Geometric Brownian Motion
+![image](https://github.com/andytyuan2/Monte-Carlo-Sims/assets/125106540/75ba8175-dd44-4564-90bb-2e7815836a97)
+
+### Example of market data Geometric Brownian Motion - 100 iterations
+![image](https://github.com/andytyuan2/Monte-Carlo-Sims/assets/125106540/2cabc7e6-2ca6-405e-b89d-0b15bc4712d8)
+
 
 ### Example of Monte Carlo of Volatility - uniform distribution
 ![image](https://github.com/andytyuan2/Monte-Carlo-Sims/assets/125106540/d337c431-e9d0-4daf-a791-5d82003b7768)
