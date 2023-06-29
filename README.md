@@ -5,7 +5,9 @@ Any kind of practice with Monte Carlo simulations using Numpy.
 
 ## Current completed projects
 - Geometric Brownian Motion Monte Carlo Simulation 
-    - Normally distributed 
+    - One that has personal inputs
+    - One that takes info from Yahoo! Finance and calculates its own expected return and volatility, uses historical average for expected return
+    - One that takes the same info as the one above, but then plots 100 iterations of the program on one plot
 - Monte Carlo simulation by changing volatility of an option
     - one using uniform distribution of volatility
     - one using normal distribution of volatility, shifted so that volatility is not negative
