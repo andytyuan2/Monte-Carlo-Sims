@@ -19,7 +19,7 @@ plt.figure(figsize=(15,8))
 plt.xlabel('Time Increments of '+str(dict['years'])+' year(s)')
 plt.ylabel('Stock Price ($)')
 plt.title('GBM price movements for $'+tick+' in '+day_increment+' day increments where expected return = '
-            +str(100*expected_return)+'% and volatility = '+str(round(stock_vol,4)*100)+'%')
+            +str(expected_return)+'% and volatility = '+str(round(stock_vol,4)*100)+'%')
 
 for num in range(0,100):
     time_list = [0]
@@ -27,7 +27,7 @@ for num in range(0,100):
     for num in range(0,dict['increments']):
         rng = np.random.default_rng()
         numbers = rng.normal()
-        change = expected_return*price_list[num]*1/dict['increments'] + stock_vol*math.sqrt(1/dict['increments'])*price_list[num]*numbers
+        change = (expected_return/100)*price_list[num]*1/dict['increments'] + stock_vol*math.sqrt(1/dict['increments'])*price_list[num]*numbers
         new_price = price_list[num]+change
         price_list.append(new_price)
         time_list.append(num)
